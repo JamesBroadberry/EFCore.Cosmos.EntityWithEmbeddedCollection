@@ -16,7 +16,7 @@ namespace EFCore.Cosmos.EntityWithEmbeddedCollection
             modelBuilder.HasDefaultContainer(CONTAINER_NAME);
 
             modelBuilder.Entity<Order>().HasKey(x => x.Id);
-            modelBuilder.Entity<Order>().OwnsMany(x => x.Items).HasKey(x => x.Id);
+            modelBuilder.Entity<Order>().OwnsMany(x => x.Items);
 
             base.OnModelCreating(modelBuilder);
         }

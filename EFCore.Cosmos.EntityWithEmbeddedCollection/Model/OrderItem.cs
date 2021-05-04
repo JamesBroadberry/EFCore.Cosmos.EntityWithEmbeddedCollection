@@ -6,6 +6,5 @@ namespace EFCore.Cosmos.EntityWithEmbeddedCollection.Model
     {
         public string ItemName { get; set; } = string.Empty;
         public decimal ItemPrice { get; set; } = 0;
-        public Guid Id { get; set; } = Guid.NewGuid();
     }
 }
